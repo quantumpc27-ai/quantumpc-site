@@ -1,38 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <title>Quantum PC</title>
+
 <style>
 
 body{
+margin:0;
 font-family:Arial;
 background:#0b0f1a;
 color:white;
-text-align:center;
-padding:40px;
 }
 
-h1{
+header{
+background:#111a2e;
+padding:40px;
+text-align:center;
+}
+
+.logo{
+font-size:40px;
+color:#00bfff;
+font-weight:bold;
+}
+
+.slogan{
+color:#aaa;
+}
+
+.section{
+padding:50px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:#151f36;
+padding:25px;
+border-radius:12px;
+width:250px;
+box-shadow:0 0 15px black;
+}
+
+.preco{
+font-size:26px;
 color:#00bfff;
 }
 
-.servico{
-background:#151f36;
-margin:20px auto;
-padding:20px;
-border-radius:10px;
-width:300px;
+.beneficios{
+max-width:600px;
+margin:auto;
+line-height:1.8;
+color:#ccc;
+}
+
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input,textarea{
+padding:10px;
+border-radius:6px;
+border:none;
 }
 
 button{
-background:#00bfff;
+padding:12px;
 border:none;
-padding:15px 25px;
+background:#00bfff;
+color:white;
 font-size:16px;
-border-radius:8px;
+border-radius:6px;
 cursor:pointer;
+}
+
+footer{
+background:#111a2e;
+padding:30px;
+text-align:center;
+color:#aaa;
+}
+
+iframe{
+width:90%;
+max-width:600px;
+height:300px;
+border:none;
+border-radius:10px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:16px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px black;
 }
 
 </style>
@@ -40,23 +118,90 @@ cursor:pointer;
 
 <body>
 
-<h1>QUANTUM PC</h1>
-<p>Tecnologia além do limite</p>
+<header>
 
-<div class="servico">
-<h2>Montagem de PC Completa</h2>
-<p>R$90</p>
+<div class="logo">QUANTUM PC</div>
+<p class="slogan">Tecnologia além do limite</p>
+
+</header>
+
+<div class="section">
+
+<h2>Seu computador está lento?</h2>
+<p>Nós resolvemos! Manutenção e montagem profissional de computadores.</p>
+
 </div>
 
-<div class="servico">
-<h2>Limpeza Completa</h2>
-<p>R$60</p>
+<div class="section">
+
+<h2>Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Montagem de PC Completa</h3>
+<p class="preco">R$90</p>
 </div>
 
-<p>Seu computador está lento? Nós resolvemos!</p>
+<div class="card">
+<h3>Limpeza Completa</h3>
+<p class="preco">R$60</p>
+</div>
 
-<a href="https://wa.me/5534988185307">
-<button>Falar no WhatsApp</button>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Por que escolher a Quantum PC?</h2>
+
+<div class="beneficios">
+
+✔ Atendimento rápido<br>
+✔ Serviço profissional<br>
+✔ Preço justo<br>
+✔ Orçamento sem compromisso
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Localização</h2>
+
+<iframe src="https://maps.google.com/maps?q=Brasil&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+
+</div>
+
+<div class="section">
+
+<h2>Solicitar orçamento</h2>
+
+<form>
+
+<input type="text" placeholder="Seu nome">
+
+<input type="tel" placeholder="Seu telefone">
+
+<textarea placeholder="Descreva o problema do seu PC"></textarea>
+
+<button>Enviar</button>
+
+</form>
+
+</div>
+
+<footer>
+
+<p>📱 WhatsApp: (34) 98818-5307</p>
+<p>Quantum PC © 2026</p>
+
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5534988185307">
+Falar no WhatsApp
 </a>
 
 </body>
